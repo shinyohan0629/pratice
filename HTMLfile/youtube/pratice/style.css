@@ -1,0 +1,84 @@
+각 색의 가서 var(--text-color) var(각 이름 넣어준다.) body {
+  margin: 0;
+  font-family: source sans pro;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #263343;
+  padding: 8px 12px;
+}
+
+.navbar_logo {
+  font-size: 24px;
+  color: white;
+}
+
+.navbar_logo i {
+  color: white;
+}
+
+.navbar_manu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar_manu li {
+  padding: 8px 12px;
+}
+
+.navbar_manu li:hover {
+  background-color: #d49466;
+  border-radius: 4px;
+}
+
+.navbar_icons {
+  list-style: none;
+  color: white;
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar_icons li {
+  padding: 8px 12px;
+}
+
+.nadvbar_toogleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: white;
+}
+
+@media screen and (max-width: 780px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-first;
+    padding: 8px 24px;
+  }
+
+  .navbar_manu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar_manu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar_icons {
+    justify-content: center;
+    width: 100%;
+  }
+}
