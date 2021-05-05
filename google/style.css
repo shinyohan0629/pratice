@@ -19,7 +19,7 @@
 }
 
 .navheader .navbar ul li {
-  margin-right: 30px;
+  margin-right: 25px;
   height: 15px;
 }
 
@@ -29,7 +29,7 @@
   display: block;
   line-height: 36px;
   width: 36;
-  color: darkgray;
+  color: black;
 }
 
 .navheader .navbar ul li a:hover {
@@ -41,4 +41,66 @@
   height: 30px;
   border-radius: 20px;
   border-top: 50px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main .google {
+  margin-top: 70px;
+  width: 300px;
+  padding: 0;
+}
+
+.main ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  border: 2px solid gray;
+  border-radius: 40px;
+  padding: 13px;
+  font-size: 15px;
+}
+
+.main a {
+  text-decoration: none;
+  color: gray;
+}
+
+.main li {
+  margin: 0 30px 0 30px;
+}
+
+.down {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+.down li {
+  list-style: none;
+  padding: 0;
+}
+
+.up {
+  display: flex;
+  width: 100%;
+  padding-left: 0px;
+  justify-content: center;
+}
+
+.lastmanu {
+  display: flex;
+  justify-content: center;
+}
+
+.lastmanu li {
+  margin-top: -50px;
+  list-style: none;
+}
+
+.button {
+  display: flex;
 }
