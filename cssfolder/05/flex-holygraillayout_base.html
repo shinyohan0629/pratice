@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 800px;
+            border: 1px solid gray;
+        }
+        header{
+            border-bottom: 1px solid gray;
+            padding-left: 20px;
+        }
+        footer{
+            border-top: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+        .content{
+            display: flex;
+        }
+        .content nav{
+            border-right: 1px solid gray;
+        }
+        .content aside{
+            border-left: 1px solid gray;
+        }
+        nav, aside{
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+        main{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </nav>
+            <main>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic voluptatem fugiat corporis, porro blanditiis similique fugit inventore quis harum soluta adipisci placeat quidem in, suscipit labore voluptates eum nihil est?
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="#">홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>
