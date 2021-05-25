@@ -4,7 +4,8 @@ const BODY = document.querySelector("body"),
 
 
 function getRandom(){
-
+    const randomColor = Math.floor(Math.random() * 16777215).toString(16);//toString으로 16진수로 변환, 16777215를 Hex로 표현하면 ffffff다.
+    return randomColor;
 }
 
 function handleClick(){

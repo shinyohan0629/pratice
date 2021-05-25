@@ -4,13 +4,13 @@ const BODY = document.querySelector("body"),
 
 function handleClick() {
     const color = getRandom(); //클릭을 할 때마다 색이 바뀌어야 되기 때문에
-    NAME.innerText = `HEX COLOR : #${color}`;
+    NAME.innerText = `HEX COLOR :#${color}`;
     BODY.style.background = `#${color}`;
     console.log(color);
 }
 
 function getRandom() {
-    const hex = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f']; //문자열
+    const hex = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']; //문자열
     // const hex = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, a, b, c, d, e, f; 숫자
     // const hex = "0123456789abcdef"; //이렇게 해도 된다.
     let number = '';
@@ -29,6 +29,10 @@ function init() {
 }
 
 init();
+
+
+
+
 
 //초기값이 있어야하고,
 
