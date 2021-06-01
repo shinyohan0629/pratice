@@ -1,0 +1,14 @@
+
+.container {
+    border: 4px solid;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container .item{
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    border: 4px dashed red;
+    border-radius: 10px;
+}
