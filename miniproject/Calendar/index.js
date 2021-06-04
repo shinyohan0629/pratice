@@ -64,7 +64,6 @@ function makeCalendar() {
     }
   }
 }
-
 function todayColor() {
   makeCalendar();
   for (i = 1; i <= last_date; i++) {}
