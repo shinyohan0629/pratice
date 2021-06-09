@@ -1,14 +1,19 @@
 const SELECT = document.querySelector("select");
-const OPTION = document.querySelectorAll("option");
+const OPTION = SELECT.querySelectorAll("option");
 
-function handleClick(event) {
+function handleClick() {
   //선택하면 selelct의 value값이 나온다.
-  let currentValue = event.target.value;
+  let OptEle = SELECT.selectedOptions;
+  console.log(OptEle);
+  let currentValue = OptEle[0].value;
   localStorage.setItem("country", currentValue); //앞부분은 string ""을 쓰면 그 자체의 string이 된다.
+}
+
+function addfn() {
   const currentCountry = localStorage.getItem("country");
   for (let i = 0; i < OPTION.length; i++) {
     if (currentCountry === OPTION[i].value) {
-      OPTION[i].value("selected", "selected");
+      OPTION[i].setAttribute("selected", "selected");
     }
   }
 }
@@ -21,6 +26,7 @@ function init() {
   SELECT.addEventListener("change", handleClick);
 }
 
+addfn();
 init();
 
 //1. html의 option을 가지고 온다.

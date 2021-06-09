@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Random Number Game</h1>
+    <h2 class="numberCheck">Generate a number between 0 and 00</h2>
+    <form>
+        <input type="range" id="inputValue" list="rangeValue" max="200" min="0" step="5" value="0">
+        <datalist id="rangeValue">
+            <option value="50"></option>
+            <option value="100"></option>
+            <option value="150"></option>
+            <option value="200"></option>
+        </datalist>
+    </form>
+    <form>
+        Guess the number: <input type="text" class="compare">
+        <input type="submit" value="Play!" class="js-submit">
+    </form>
+        <span class="compareSpan"></span>
+        <span class="resultSpan"></span>
+    <script src="index.js"></script>
+</body>
+</html>
