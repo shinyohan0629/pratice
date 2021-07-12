@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <style>
+      .dot {
+        height: 15px;
+        width: 15px;
+        margin: 5px 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .next {
+        position: absolute;
+        right: 20px;
+      }
+
+      img {
+        width: 300px;
+        height: 200px;
+      }
+    </style>
+</head>
+<body>
+  <div><img src="1.jpg" alt="sky" class="img"></div>
+  <div id="btn">
+    <div><button class="prev">&#10094;</button></div>
+    <div><button class="next">&#10095;</button></div>
+  </div>  
+  <div class=btndot">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
